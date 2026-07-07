@@ -17,36 +17,51 @@
 </head>
 <body>
   <h1>隱私權政策 / Privacy Policy</h1>
-  <p class="muted">數字獵人 (Number Hunter)　·　生效日 Effective date: 2026-06-14　·　聯絡 Contact: <a href="mailto:apple@jikker.net">apple@jikker.net</a></p>
+  <p class="muted">數字獵人 (Number Hunter)　·　生效日 Effective date: 2026-07-07　·　聯絡 Contact: <a href="mailto:apple@jikker.net">apple@jikker.net</a></p>
 
   <h2>繁體中文</h2>
   <p><strong>數字獵人</strong>（以下稱「本 App」）尊重你的隱私。本政策說明我們蒐集哪些資料、如何使用，以及第三方服務。</p>
 
-  <h3>我們蒐集的資料</h3>
+  <h3>我們蒐集或處理的資料</h3>
   <ul>
-    <li><strong>排行榜資料</strong>：當你通關並選擇上傳成績時，會上傳你<strong>自行輸入的暱稱</strong>、用時、難度與時間戳記到我們的雲端排行榜（Google 試算表，透過 Google Apps Script）。請勿在暱稱填入真實姓名等個資。</li>
-    <li><strong>廣告資料（Google AdMob）</strong>：為顯示廣告，AdMob 可能蒐集裝置識別碼、IP 位址、廣告互動與粗略位置（由 IP 推估）等。若你同意追蹤（ATT），可能用於個人化廣告。</li>
-    <li><strong>使用分析（Google Analytics for Firebase）</strong>：蒐集匿名/化名的使用資料，例如開啟次數、使用時長、遊玩事件、裝置型號與系統版本、粗略地區，協助我們改善遊戲。</li>
-    <li><strong>本機儲存</strong>：你的偏好設定（音樂/音效/語音/語言）與本機最佳成績存於裝置本機，不會上傳。</li>
+    <li><strong>排行榜資料</strong>：當你通關並選擇上傳成績時，會上傳你自行輸入的暱稱、完成時間、難度、錯誤次數、單題最快/最慢時間與時間戳記到雲端排行榜（Google 試算表，透過 Google Apps Script）。請勿在暱稱填入真實姓名、電話、Email 或其他個人資料。</li>
+    <li><strong>多人連線對戰資料</strong>：當你建立或加入對戰房間時，本 App 會處理你自行輸入的暱稱、房間代碼、對戰難度、玩家座位、對局分數與即時遊戲狀態。這些資料用於配對、同步對戰畫面、判定搶答結果與重新開局。</li>
+    <li><strong>連線信令與網路資訊</strong>：多人對戰使用 WebRTC。為建立連線，本 App 會透過 Google Apps Script 暫存房間信令資料（例如 offer/answer、房間狀態與短期 nonce），並可能使用 STUN/TURN 服務協助 NAT 穿透。STUN/TURN 服務在連線過程中可能處理 IP 位址與連線中繼資訊。房間信令僅用於建立或維持當次連線，不作為公開個人檔案。</li>
+    <li><strong>語音聊天</strong>：若你在對戰房間開啟語音聊天，本 App 會請求麥克風權限，並將你的聲音以 WebRTC 即時傳送給同房玩家。本 App 不會錄音、不會將語音內容保存到我們的伺服器，也不會把語音內容用於廣告或分析。</li>
+    <li><strong>內購資料</strong>：語音聊天為一次性 App 內購買。購買與還原由 Apple App Store / StoreKit 處理；本 App 只讀取 Apple 回傳的購買權益狀態，用於判斷是否可使用語音聊天。我們不會取得你的付款卡號或完整付款資訊。</li>
+    <li><strong>廣告資料（Google AdMob）</strong>：為顯示廣告，AdMob 可能蒐集裝置識別碼、IP 位址、廣告互動、廣告觀看紀錄與由 IP 推估的粗略位置等。若你同意追蹤（ATT），相關資料可能用於個人化廣告或廣告成效衡量。</li>
+    <li><strong>使用分析（Google Analytics for Firebase）</strong>：蒐集匿名或化名的使用資料，例如 App 開啟次數、使用時長、遊玩事件、裝置型號、系統版本、粗略地區與當機/效能資料，協助我們改善遊戲。</li>
+    <li><strong>本機儲存</strong>：你的偏好設定（音樂、音效、語音、語言）、本機最佳成績、排行榜/對戰暱稱與部分遊戲狀態存於裝置本機（localStorage 或 App 本機儲存），不會因本機儲存本身而上傳。</li>
   </ul>
 
   <h3>我們「不」蒐集</h3>
-  <p>不需註冊、不蒐集真實姓名、電話、Email、通訊錄或精確 GPS 位置。</p>
+  <ul>
+    <li>不需註冊帳號。</li>
+    <li>不蒐集電話、通訊錄或精確 GPS 位置。</li>
+    <li>不錄製或保存語音聊天內容。</li>
+    <li>不取得付款卡號或完整付款資訊。</li>
+  </ul>
 
   <h3>第三方服務（各有其隱私政策）</h3>
   <ul>
+    <li>Apple App Store / StoreKit：<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
     <li>Google AdMob：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
     <li>Google Analytics for Firebase：<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-    <li>Google Apps Script / Sheets：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>Google Apps Script / Google Sheets：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>WebRTC STUN/TURN 連線服務：用於建立或中繼即時對戰與語音連線，服務提供者可能處理連線所需的 IP 位址與網路中繼資訊。</li>
   </ul>
 
   <h3>兒童</h3>
-  <p>本 App 為一般大眾設計，並非以兒童為主要對象。我們不會在知情下蒐集兒童個資。</p>
+  <p>本 App 為一般大眾設計，並非以兒童為主要對象。多人對戰與語音聊天可能涉及使用者自行輸入的暱稱與即時通訊；未成年人使用時應由家長或監護人陪同或同意。我們不會在知情下蒐集兒童個資。</p>
 
   <h3>你的選擇</h3>
   <ul>
-    <li>可在 iOS「設定 &gt; 隱私權與安全性 &gt; 追蹤」關閉廣告追蹤；歐盟／英國用戶會看到廣告同意視窗。</li>
-    <li>不上傳成績即不會送出暱稱。</li>
+    <li>可在 iOS「設定 &gt; 隱私權與安全性 &gt; 追蹤」管理廣告追蹤權限。</li>
+    <li>歐盟/英國等適用地區的用戶可透過 App 內的廣告隱私選項管理廣告同意。</li>
+    <li>不上傳成績即不會送出排行榜暱稱與成績。</li>
+    <li>不建立或加入多人對戰，即不會送出對戰房間信令資料。</li>
+    <li>不開啟麥克風，即不會傳送語音給同房玩家。</li>
+    <li>你可在 App 內使用「還原購買」向 Apple 重新取得已購買的語音聊天權益狀態。</li>
   </ul>
 
   <h3>變更與聯絡</h3>
@@ -57,31 +72,46 @@
   <h2>English</h2>
   <p><strong>Number Hunter</strong> ("the App") respects your privacy. This policy explains what we collect, how we use it, and the third-party services involved.</p>
 
-  <h3>Data we collect</h3>
+  <h3>Data we collect or process</h3>
   <ul>
-    <li><strong>Leaderboard</strong>: When you finish and choose to submit your score, we upload a <strong>nickname you type yourself</strong>, your time, difficulty and a timestamp to our cloud leaderboard (a Google Sheet via Google Apps Script). Please don't put personal information in the nickname.</li>
-    <li><strong>Advertising (Google AdMob)</strong>: To show ads, AdMob may collect device identifiers, IP address, ad interactions and coarse location (from IP). With your tracking consent (ATT), it may be used for personalized ads.</li>
-    <li><strong>Analytics (Google Analytics for Firebase)</strong>: Anonymous/pseudonymous usage data such as app opens, session length, gameplay events, device model and OS version, and coarse region, to help us improve the game.</li>
-    <li><strong>On-device storage</strong>: Your preferences (music/sound/voice/language) and local best times are stored on your device and are not uploaded.</li>
+    <li><strong>Leaderboard data</strong>: When you finish a game and choose to submit your score, we upload the nickname you type, completion time, difficulty, mistakes, fastest/slowest single-number times, and a timestamp to our cloud leaderboard (a Google Sheet via Google Apps Script). Please do not enter your real name, phone number, email address, or other personal information as your nickname.</li>
+    <li><strong>Multiplayer versus data</strong>: When you create or join a versus room, the App processes your typed nickname, room code, difficulty, player slot, match score, and real-time gameplay state. This data is used for matchmaking, synchronizing the match, resolving taps, and starting rematches.</li>
+    <li><strong>Connection signaling and network information</strong>: Multiplayer uses WebRTC. To establish connections, the App temporarily stores room signaling data through Google Apps Script, such as offers/answers, room status, and short-lived nonces. The App may also use STUN/TURN services to help establish or relay connections. STUN/TURN services may process IP addresses and connection relay information during the connection. Room signaling is used only to establish or maintain the current match and is not used as a public user profile.</li>
+    <li><strong>Voice chat</strong>: If you enable voice chat in a versus room, the App requests microphone permission and sends your voice to players in the same room in real time using WebRTC. The App does not record audio, does not store voice chat on our servers, and does not use voice content for advertising or analytics.</li>
+    <li><strong>In-app purchase data</strong>: Voice chat is a one-time in-app purchase. Purchases and restores are handled by Apple App Store / StoreKit. The App only reads the entitlement status returned by Apple to decide whether voice chat is available. We do not receive your payment card number or full payment details.</li>
+    <li><strong>Advertising (Google AdMob)</strong>: To show ads, AdMob may collect device identifiers, IP address, ad interactions, ad view information, and coarse location inferred from IP. With your tracking consent (ATT), this may be used for personalized ads or ad measurement.</li>
+    <li><strong>Analytics (Google Analytics for Firebase)</strong>: Anonymous or pseudonymous usage data such as app opens, session length, gameplay events, device model, OS version, coarse region, and crash/performance data helps us improve the game.</li>
+    <li><strong>On-device storage</strong>: Your preferences (music, sound, voice, language), local best times, leaderboard/versus nickname, and some game state are stored on your device (localStorage or app storage). This local storage is not uploaded by itself.</li>
   </ul>
 
   <h3>What we do NOT collect</h3>
-  <p>No account required; we do not collect real name, phone, email, contacts, or precise GPS location.</p>
-
-  <h3>Third-party services (each has its own policy)</h3>
   <ul>
+    <li>No account is required.</li>
+    <li>We do not collect phone numbers, contacts, or precise GPS location.</li>
+    <li>We do not record or store voice chat content.</li>
+    <li>We do not receive payment card numbers or full payment details.</li>
+  </ul>
+
+  <h3>Third-party services</h3>
+  <ul>
+    <li>Apple App Store / StoreKit: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
     <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
     <li>Google Analytics for Firebase: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-    <li>Google Apps Script / Sheets: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>Google Apps Script / Google Sheets: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>WebRTC STUN/TURN services: used to establish or relay real-time versus and voice connections; providers may process IP addresses and network relay information needed for the connection.</li>
   </ul>
 
   <h3>Children</h3>
-  <p>The App is intended for a general audience and is not primarily directed to children. We do not knowingly collect personal data from children.</p>
+  <p>The App is intended for a general audience and is not primarily directed to children. Multiplayer and voice chat may involve user-entered nicknames and real-time communication; minors should use these features with parent or guardian permission or supervision. We do not knowingly collect personal data from children.</p>
 
   <h3>Your choices</h3>
   <ul>
-    <li>You can turn off ad tracking in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. Users in the EU/UK will see an ad consent dialog.</li>
-    <li>If you don't submit a score, no nickname is sent.</li>
+    <li>You can manage ad tracking permission in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+    <li>Users in applicable regions such as the EU/UK can manage ad consent through the in-app advertising privacy options.</li>
+    <li>If you do not submit a score, no leaderboard nickname or score is sent.</li>
+    <li>If you do not create or join a versus room, no versus room signaling data is sent.</li>
+    <li>If you do not enable the microphone, no voice is sent to players in the same room.</li>
+    <li>You can use "Restore Purchase" in the App to ask Apple to restore your voice chat entitlement status.</li>
   </ul>
 
   <h3>Changes &amp; contact</h3>
