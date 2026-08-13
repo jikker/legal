@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣此刻 — 開啟攝影機</title>
+<style>
+  body { font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+         background: #0b2239; color: #fff; margin: 0; min-height: 100vh;
+         display: flex; align-items: center; justify-content: center; text-align: center; }
+  .card { padding: 40px 24px; max-width: 420px; }
+  h1 { font-size: 1.5rem; margin-bottom: .3em; }
+  p { color: #b7c9d8; line-height: 1.6; }
+  .btn { display: inline-block; margin: 10px 6px 0; padding: 14px 28px; border-radius: 12px;
+         background: #1d9bf0; color: #fff; text-decoration: none; font-weight: 700; }
+  .btn.alt { background: #24344a; }
+  .hint { font-size: .85rem; color: #7e93a8; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>台灣此刻</h1>
+  <p>有人分享了一支即時攝影機給你。<br>已安裝 App 會直接開啟；還沒安裝請先下載。</p>
+  <a class="btn" id="openBtn" href="#">在 App 中開啟</a>
+  <a class="btn alt" id="storeBtn" href="https://apps.apple.com/tw/app/id6800735699">下載 App</a>
+  <p class="hint">本服務為民間公開資料整合工具，並非政府機關官方服務。</p>
+</div>
+<script>
+  var cam = new URLSearchParams(location.search).get('cam') || '';
+  var deep = 'taiwannow://camera/' + encodeURIComponent(cam);
+  document.getElementById('openBtn').href = deep;
+  // 有帶 cam 參數就先嘗試喚起 App（沒裝會停留在本頁，可點下載）
+  if (cam) { setTimeout(function () { location.href = deep; }, 400); }
+</script>
+</body>
+</html>
